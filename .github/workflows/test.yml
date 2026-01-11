@@ -16,7 +16,7 @@ jobs:
     name: lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -59,7 +59,7 @@ jobs:
             wagtail: '6.4'
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -90,7 +90,7 @@ jobs:
       - test
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
